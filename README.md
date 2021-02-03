@@ -11,7 +11,7 @@ heroImageStyle: {
   background: '#fff',
   borderRadius: '1rem',
 }
-bgImage: back8.gif
+bgImage: back1.gif
 bgImageStyle: {
   height: '1000px'
 }

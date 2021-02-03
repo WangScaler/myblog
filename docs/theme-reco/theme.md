@@ -1,5 +1,5 @@
 ---
-title: 背景图以及气泡特效
+title: 背景图、气泡特效以及压缩编译文件
 date: 2020-05-27
 ---
 
@@ -264,5 +264,30 @@ export default {
       flex: 0 0 auto
       vertical-align top
 
+```
+## 压缩编译文件
+
+```bash
+npm install compression-webpack-plugin@5.0.1  --save-dev  
+```
+
+注意：如果你这里直接不加@5.0.1版本进行安装，有可能编译的时候会出现异常：Cannot read property 'tapPromise' of undefined 原因是webpack的包版本不兼容
+
+在confi.js加入
+
+```js
+const CompressionPlugin = require("compression-webpack-plugin");
+configureWebpack: { // webpack plugins
+    plugins: [
+        //提供带 Content-Encoding 编码的压缩版的资源
+        new CompressionPlugin({
+            algorithm: 'gzip',
+            test: /\.js$|\.html$|\.css/,// 匹配文件名
+            // test: /\.(js|css)$/,         
+            threshold: 10240,            // 对超过10k的数据压缩
+            deleteOriginalAssets: false, // 不删除源文件
+            minRatio: 0.8                // 压缩比
+        }),
+    ]},
 ```
 

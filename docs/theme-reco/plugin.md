@@ -20,6 +20,8 @@ vuepress-plugin-ribbon-animation: 彩带特效
 vue-canvas-effect： 悬浮气泡特效
 
 @vuepress-reco/vuepress-plugin-bulletin-popover:  公告
+
+@compression-webpack-plugin 压缩编译文件
        
 :::
 
