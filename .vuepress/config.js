@@ -43,12 +43,17 @@ module.exports = {
         },
         {
           type: 'text',
-          content: 'QQ/VX：134920519',
+          content: 'QQ/VX：1349320519',
           style: 'text-align: center;'
         },
         {
           type: 'text',
           content: '喜欢的主题特效可以去个人信息',
+          style: 'text-align: center;'
+        },
+        {
+          type: 'text',
+          content: '友链或疑问均可在留言板给我留言',
           style: 'text-align: center;'
         }
       ],
@@ -233,7 +238,7 @@ module.exports = {
         "",
         "theme",
         "plugin",
-        "api"
+        "mylife"
       ]
     },
     "type": "blog",

@@ -24,6 +24,9 @@ date: 2020-12-25
 
 我的[博客园](https://www.cnblogs.com/wangscaler/)里面虽然开通了博客，却从未记载博客。
 
+## 我的gitee
+我的[gitee](https://gitee.com/WangScaler)拉取了一些github项目。
+
 ## 我的QQ/VX
 
 QQ和微信都可以通过搜索**1349320519**来加我
